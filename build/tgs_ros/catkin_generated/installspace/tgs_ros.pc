@@ -1,0 +1,8 @@
+prefix=/home/raya/oop_ros/install
+
+Name: tgs_ros
+Description: Description of tgs_ros
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
