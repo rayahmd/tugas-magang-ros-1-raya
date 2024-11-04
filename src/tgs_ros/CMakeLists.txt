@@ -50,6 +50,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   driver.msg
+  order.msg
 )
 
 generate_messages(
@@ -228,6 +229,12 @@ include_directories(
 
 add_executable(driver_publisher src/publisher.cpp)  
 target_link_libraries(driver_publisher ${catkin_LIBRARIES})
+
+add_executable(order_publisher src/order_publisher.cpp)  
+target_link_libraries(order_publisher ${catkin_LIBRARIES})
+
+add_executable(order_subscriber src/order_subscriber.cpp)  
+target_link_libraries(order_subscriber ${catkin_LIBRARIES})
 
 add_executable(driver_subscriber src/subscriber.cpp)  
 target_link_libraries(driver_subscriber ${catkin_LIBRARIES})

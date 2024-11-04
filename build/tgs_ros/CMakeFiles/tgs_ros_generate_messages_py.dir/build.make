@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/raya/oop_ros/build
 include tgs_ros/CMakeFiles/tgs_ros_generate_messages_py.dir/progress.make
 
 tgs_ros/CMakeFiles/tgs_ros_generate_messages_py: /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/_driver.py
+tgs_ros/CMakeFiles/tgs_ros_generate_messages_py: /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/_order.py
 tgs_ros/CMakeFiles/tgs_ros_generate_messages_py: /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/__init__.py
 
 
@@ -62,13 +63,20 @@ tgs_ros/CMakeFiles/tgs_ros_generate_messages_py: /home/raya/oop_ros/devel/lib/py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raya/oop_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG tgs_ros/driver"
 	cd /home/raya/oop_ros/build/tgs_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/raya/oop_ros/src/tgs_ros/msg/driver.msg -Itgs_ros:/home/raya/oop_ros/src/tgs_ros/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p tgs_ros -o /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg
 
+/home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/_order.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/_order.py: /home/raya/oop_ros/src/tgs_ros/msg/order.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raya/oop_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG tgs_ros/order"
+	cd /home/raya/oop_ros/build/tgs_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/raya/oop_ros/src/tgs_ros/msg/order.msg -Itgs_ros:/home/raya/oop_ros/src/tgs_ros/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p tgs_ros -o /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg
+
 /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/__init__.py: /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/_driver.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raya/oop_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for tgs_ros"
+/home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/__init__.py: /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/_order.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raya/oop_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for tgs_ros"
 	cd /home/raya/oop_ros/build/tgs_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg --initpy
 
 tgs_ros_generate_messages_py: tgs_ros/CMakeFiles/tgs_ros_generate_messages_py
 tgs_ros_generate_messages_py: /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/_driver.py
+tgs_ros_generate_messages_py: /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/_order.py
 tgs_ros_generate_messages_py: /home/raya/oop_ros/devel/lib/python3/dist-packages/tgs_ros/msg/__init__.py
 tgs_ros_generate_messages_py: tgs_ros/CMakeFiles/tgs_ros_generate_messages_py.dir/build.make
 

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg"
+messages_str = "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg;/home/raya/oop_ros/src/tgs_ros/msg/order.msg"
 services_str = ""
 pkg_name = "tgs_ros"
 dependencies_str = "std_msgs"

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "/home/raya/oop_ros/devel/share/roseus/ros/tgs_ros/manifest.l"
   "/home/raya/oop_ros/devel/share/roseus/ros/tgs_ros/msg/driver.l"
+  "/home/raya/oop_ros/devel/share/roseus/ros/tgs_ros/msg/order.l"
   "CMakeFiles/tgs_ros_generate_messages_eus"
 )
 

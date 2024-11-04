@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/raya/oop_ros/src/tgs_ros/src/publisher.cpp
+/home/raya/oop_ros/src/tgs_ros/src/driverfile.h
 iostream
 -
 string
@@ -33,6 +33,16 @@ ros/ros.h
 /home/raya/oop_ros/src/tgs_ros/src/ros/ros.h
 tgs_ros/driver.h
 /home/raya/oop_ros/src/tgs_ros/src/tgs_ros/driver.h
+tgs_ros/order.h
+/home/raya/oop_ros/src/tgs_ros/src/tgs_ros/order.h
+
+/home/raya/oop_ros/src/tgs_ros/src/publisher.cpp
+ros/ros.h
+/home/raya/oop_ros/src/tgs_ros/src/ros/ros.h
+tgs_ros/driver.h
+/home/raya/oop_ros/src/tgs_ros/src/tgs_ros/driver.h
+driverfile.h
+/home/raya/oop_ros/src/tgs_ros/src/driverfile.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

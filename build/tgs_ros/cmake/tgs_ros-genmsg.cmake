@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "tgs_ros: 1 messages, 0 services")
+message(STATUS "tgs_ros: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Itgs_ros:/home/raya/oop_ros/src/tgs_ros/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_tgs_ros_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tgs_ros" "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg" ""
 )
 
+get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/order.msg" NAME_WE)
+add_custom_target(_tgs_ros_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tgs_ros" "/home/raya/oop_ros/src/tgs_ros/msg/order.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -30,6 +35,12 @@ add_custom_target(_tgs_ros_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(tgs_ros
   "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tgs_ros
+)
+_generate_msg_cpp(tgs_ros
+  "/home/raya/oop_ros/src/tgs_ros/msg/order.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tgs_ros
@@ -51,6 +62,8 @@ add_dependencies(tgs_ros_generate_messages tgs_ros_generate_messages_cpp)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg" NAME_WE)
 add_dependencies(tgs_ros_generate_messages_cpp _tgs_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/order.msg" NAME_WE)
+add_dependencies(tgs_ros_generate_messages_cpp _tgs_ros_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(tgs_ros_gencpp)
@@ -63,6 +76,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS tgs_ros_generate_messages_cpp)
 ### Generating Messages
 _generate_msg_eus(tgs_ros
   "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tgs_ros
+)
+_generate_msg_eus(tgs_ros
+  "/home/raya/oop_ros/src/tgs_ros/msg/order.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tgs_ros
@@ -84,6 +103,8 @@ add_dependencies(tgs_ros_generate_messages tgs_ros_generate_messages_eus)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg" NAME_WE)
 add_dependencies(tgs_ros_generate_messages_eus _tgs_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/order.msg" NAME_WE)
+add_dependencies(tgs_ros_generate_messages_eus _tgs_ros_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(tgs_ros_geneus)
@@ -96,6 +117,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS tgs_ros_generate_messages_eus)
 ### Generating Messages
 _generate_msg_lisp(tgs_ros
   "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tgs_ros
+)
+_generate_msg_lisp(tgs_ros
+  "/home/raya/oop_ros/src/tgs_ros/msg/order.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tgs_ros
@@ -117,6 +144,8 @@ add_dependencies(tgs_ros_generate_messages tgs_ros_generate_messages_lisp)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg" NAME_WE)
 add_dependencies(tgs_ros_generate_messages_lisp _tgs_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/order.msg" NAME_WE)
+add_dependencies(tgs_ros_generate_messages_lisp _tgs_ros_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(tgs_ros_genlisp)
@@ -129,6 +158,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS tgs_ros_generate_messages_lisp)
 ### Generating Messages
 _generate_msg_nodejs(tgs_ros
   "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tgs_ros
+)
+_generate_msg_nodejs(tgs_ros
+  "/home/raya/oop_ros/src/tgs_ros/msg/order.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tgs_ros
@@ -150,6 +185,8 @@ add_dependencies(tgs_ros_generate_messages tgs_ros_generate_messages_nodejs)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg" NAME_WE)
 add_dependencies(tgs_ros_generate_messages_nodejs _tgs_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/order.msg" NAME_WE)
+add_dependencies(tgs_ros_generate_messages_nodejs _tgs_ros_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(tgs_ros_gennodejs)
@@ -162,6 +199,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS tgs_ros_generate_messages_nodejs)
 ### Generating Messages
 _generate_msg_py(tgs_ros
   "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tgs_ros
+)
+_generate_msg_py(tgs_ros
+  "/home/raya/oop_ros/src/tgs_ros/msg/order.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tgs_ros
@@ -182,6 +225,8 @@ add_dependencies(tgs_ros_generate_messages tgs_ros_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/driver.msg" NAME_WE)
+add_dependencies(tgs_ros_generate_messages_py _tgs_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/raya/oop_ros/src/tgs_ros/msg/order.msg" NAME_WE)
 add_dependencies(tgs_ros_generate_messages_py _tgs_ros_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

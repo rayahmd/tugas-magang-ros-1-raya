@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "/home/raya/oop_ros/devel/share/gennodejs/ros/tgs_ros/msg/driver.js"
+  "/home/raya/oop_ros/devel/share/gennodejs/ros/tgs_ros/msg/order.js"
   "CMakeFiles/tgs_ros_generate_messages_nodejs"
 )
 
